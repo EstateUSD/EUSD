@@ -27,8 +27,8 @@ var newProxyAdmin;
 contract("EUSD", accounts => {
     describe('no owner', function () {
         it("owner address is correct", async () => {
-            var EUSD = await EUSD.deployed();
-            expect(await EUSD.owner()).to.equal(owner);
+            var eusd = await EUSD.deployed();
+            expect(await eusd.owner()).to.equal(owner);
         });
     });
 });
