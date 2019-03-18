@@ -1,0 +1,21 @@
+{
+  "name": "stabletoken",
+  "version": "1.0.0",
+  "description": "StableToken",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "pify": "^4.0.1"
+  },
+  "devDependencies": {
+    "openzeppelin-test-helpers": "^0.1.2"
+  }
+}
