@@ -32,13 +32,23 @@ truffle test
 
 ## Deployment
 
+For deployment the wallet must have ETH balance for the respective network.
+For example; for Reinkby ETH, your wallet must have rinkeby ETH, same is the case with mainnet ETH as well.
+
+Once you have ETH, then only run the following commands.
+
+The wallet that this project is using, its mnemonics is stored in ".secret" file.
+You MUST change your wallet mnemonics in this file.  
+
 ### Rinkeby
 
 ```bash
 truffle migrate --network rinkeby
 ```
 
-### Mainnet
+### Mainnet 
+CAUTION: This would require actual ETH on mainnet. When you really want to deploy,
+then only execute the below command.
 ```bash
 truffle migrate --network mainnet
 ```
