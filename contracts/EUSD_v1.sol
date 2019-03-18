@@ -6,11 +6,11 @@ import "./upgradeability/AdminUpgradeabilityProxy.sol";
 import "./openzeppelin-solidity/token/ERC20/ERC20Pausable.sol";
 
 /**
- * @title EINR Token contract.
+ * @title EUSD Token contract.
  * @dev This contract is only deployed and used as implementation for
  * AdminUpgradeabilityProxy contract. This contract will not hold any funds.
  */
-contract EINR_v1 is Owned, ERC20Pausable {
+contract EUSD_v1 is Owned, ERC20Pausable {
 
     using SafeMath for uint;
 
@@ -232,10 +232,10 @@ contract EINR_v1 is Owned, ERC20Pausable {
     }
 
     /**
-     * @dev only called from EINR implementation.
+     * @dev only called from EUSD implementation.
      */
     function initialize() private {
-        initialize("EINR", "EINR", 18, owner(), owner(), owner());
+        initialize("EUSD", "EUSD", 18, owner(), owner(), owner());
     }
 
     /**
