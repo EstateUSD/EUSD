@@ -69,6 +69,15 @@ module.exports = {
 //       skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
      },
 
+     mainnet: {
+       provider: () => new HDWalletProvider(mnemonic, 'https://mainnet.infura.io/${infuraKey}'),
+       network_id: 1,
+       gas: 8000000,
+       confirmations: 2,    // # of confs to wait between deployments. (default: 0)
+       timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
+//       skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
+     },
+
     // Useful for private networks
     // private: {
       // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),
@@ -85,7 +94,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-       version: "0.4.24",    // Fetch exact version from solc-bin (default: truffle's version)
+       version: "0.4.25",    // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
        settings: {          // See the solidity docs for advice about optimization and evmVersion
         optimizer: {
