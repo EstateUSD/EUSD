@@ -61,7 +61,7 @@ module.exports = {
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
      rinkeby: {
-       provider: () => new HDWalletProvider(mnemonic, 'https://rinkeby.infura.io/${infuraKey}'),
+       provider: () => new HDWalletProvider(mnemonic, 'https://rinkeby.infura.io/${infuraKey}', 0, 4),
        network_id: 4,       // rinkeby's id
        gas: 7011989,
        confirmations: 2,    // # of confs to wait between deployments. (default: 0)
@@ -70,7 +70,7 @@ module.exports = {
      },
 
      mainnet: {
-       provider: () => new HDWalletProvider(mnemonic, 'https://mainnet.infura.io/${infuraKey}'),
+       provider: () => new HDWalletProvider(mnemonic, 'https://mainnet.infura.io/${infuraKey}', 0, 4),
        network_id: 1,
        gas: 8000000,
        confirmations: 2,    // # of confs to wait between deployments. (default: 0)
