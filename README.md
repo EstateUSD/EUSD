@@ -1,54 +1,22 @@
-# StableToken
-
-## Dependencies
-*  Install latest version of node from https://nodejs.org/en/download/
-
-*  Install truffle
+# EstateUSD
+The world's first Stable Coin backed by Real Estate
 ```bash
-npm install -g truffle
+https://www.eusd.co/
 ```
 
-* Install Ganache GUI from https://truffleframework.com/ganache 
-
-
-## Setup
-
-Run the following commands in the project folder.
+## Description 
+Please vist and read our whitepaper document to understand our project completely. 
 ```bash
-npm install
+https://www.eusd.co/Estate-USD-Whitepaper.pdf
 ```
+Have a look at our smart contract if you understand solidity. 
 
-Compile code
-```bash
-truffle compile
-```
+## Leadership and Authenticity
+*  Please visit https://www.eusd.co/team/ to know more information about our team. Our project is being backed and incubated by the APIS, Government of Andhra Pradesh, INDIA. 
 
-Run Ganache GUI, click-on the "Quick Start" to start your local blockchain
+## Roles 
+* 2 level organization hierarchy has been implemented for securing operations performed on the contract. Owner being the highest authority, He has control over admin operations and can cancel unauthorized minting, pause the entire contract, etc. 
 
-Run tests
-```bash
-truffle test
-```
-
-## Deployment
-
-For deployment the wallet must have ETH balance for the respective network.
-For example; for Reinkby ETH, your wallet must have rinkeby ETH, same is the case with mainnet ETH as well.
-
-Once you have ETH, then only run the following commands.
-
-The wallet that this project is using, its mnemonics is stored in ".secret" file.
-You MUST change your wallet mnemonics in this file.  
-
-### Rinkeby
-
-```bash
-truffle migrate --network rinkeby
-```
-
-### Mainnet 
-CAUTION: This would require actual ETH on mainnet. When you really want to deploy,
-then only execute the below command.
-```bash
-truffle migrate --network mainnet
-```
+### Additional Information 
+* Contact : support@eusd.co
+* Terms and conditions: https://www.eusd.co/legal
