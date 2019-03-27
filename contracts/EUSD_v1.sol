@@ -235,7 +235,7 @@ contract EUSD_v1 is Owned, ERC20Pausable {
      * @dev only called from EUSD implementation.
      */
     function initialize() private {
-        initialize("EUSD", "EUSD", 18, owner(), owner(), owner());
+        initialize("EstateUSD", "EUSD", 18, owner(), owner(), owner());
     }
 
     /**
