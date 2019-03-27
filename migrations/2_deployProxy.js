@@ -15,7 +15,7 @@ module.exports = async function(deployer, networks, accounts) {
   const proxy = await deployer.deploy(Proxy, EUSD.address, proxyAdmin, web3.utils.stringToHex(""));
   const proxiedEUSD = await EUSD.at(proxy.address);
 
-  await proxiedEUSD.initialize("EUSD", "EUSD", 18, owner, admin1, admin2);
+  await proxiedEUSD.initialize("EstateUSD", "EUSD", 18, owner, admin1, admin2);
 
   if(networks == 'development') {
     await deployer.deploy(MockEUSD_v1);
