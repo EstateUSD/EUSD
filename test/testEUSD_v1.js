@@ -52,7 +52,7 @@ contract("EUSDProxy", accounts => {
 
     describe('Values of variables', function () {
         it("Token variables", async () => {
-            expect(await proxiedEUSD.name()).to.equal("EUSD");
+            expect(await proxiedEUSD.name()).to.equal("EstateUSD");
             expect(await proxiedEUSD.symbol()).to.equal("EUSD");
             expect((await proxiedEUSD.decimals()).toNumber()).to.equal(18);
             expect((await proxiedEUSD.totalSupply()).toNumber()).to.equal(0);
@@ -65,7 +65,7 @@ contract("EUSDProxy", accounts => {
 
     describe('initialization', function () {
         it("no initialization possible", async () => {
-            await expectThrow(proxiedEUSD.initialize("EUSD", "EUSD", 18, owner, admin1, admin2), EVMRevert);
+            await expectThrow(proxiedEUSD.initialize("EstateUSD", "EUSD", 18, owner, admin1, admin2), EVMRevert);
         });
     });
 
